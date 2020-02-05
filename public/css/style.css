@@ -1,0 +1,107 @@
+html, body {margin: 0; padding: 0;}
+html, body, div, header, footer, td, li, p, span, link, label, h1, h2, h3, h4, h5 {font-family: Helvetica, sans-serif;}
+.container-fluid{padding-right: 100px; padding-left: 100px;}
+.roots-header {position: fixed; top: 0; right: 0; left: 0; height: 83px; z-index: 1;}
+.roots-header .bg-dark{background: black !important; padding: 0;}
+.roots-header .bg-dark .navbar-brand img {width: 50px;}
+.roots-header .create-opportunities{color: yellow !important; border: 1px solid yellow; border-radius: 15px; padding: 3px 40px !important;}
+.roots-header .login-button{color: white; margin-left: 20px;}
+.roots-header .navbar-dark .navbar-nav .nav-link{color: white;}
+.roots-header .navbar-dark .navbar-nav .nav-link.active{color: yellow;}
+@media (max-width: 991.98px) {
+  .roots-header .login-button{margin-left: 0;}
+  .roots-header .create-opportunities {border: 0; color: white !important; padding: 0 !important;}
+  .roots-header .nav-item{padding: 0 10px;}
+}
+
+.main-header, .main-body, #__next{height: 100%;}
+
+@media(max-width: 767.98px) {
+  .container-fluid{padding-right: 15px; padding-left: 15px;}
+}
+
+html, body {height: 100%;}
+.banner {height: 100%; box-sizing: border-box; padding-top: 83px; background: black url("../images/Hands.svg") no-repeat center 17px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.big-text .container {border-bottom: 1px solid #c6c6c6;}
+.big-text h1{text-align: center; padding: 50px 0; font-size: 36px; font-weight: bold;}
+
+.articles {padding: 50px 0;}
+.articles h1{font-size: 20px; font-weight: bold;}
+.articles p{font-size: 16px;}
+.learn-more-button {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #007D98;
+    color: white;
+    text-transform: uppercase;
+    margin: 100px auto 0;
+    display: block;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 10px 40px;
+    border-radius: 28px;
+    font-size: 24px;
+    text-align: center;
+    border: 0;
+}
+.learn-more-button:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.padding50{padding: 50px 0;}
+.background-blue{background: #E5F2F4;}
+.website-header{font-size: 36px; font-weight: bold;}
+
+.stories .row {margin-bottom: 50px;}
+.stories .row:last-child{margin-bottom: 0;}
+.stories h1{padding: 50px 0; font-size: 36px; font-weight: bold;}
+.stories .story-teller{display: block; width: fit-content; margin: 0 auto; padding: 20px 0; text-align: center; color: #000; font-weight: bold;}
+.stories .more-stories{display: block; width: fit-content; margin: 0 0 50px auto; color: #363635;}
+.stories img{margin: 0 auto; display: block;}
+
+.person-back-button{color: black; margin-bottom: 20px; display: block; width: fit-content;}
+.person-detail-contaier{position: relative;}
+.person-detail-content{
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+
+.person-detail-content p{margin: 0; font-size: 18px;}
+
+@media(max-width: 575.98px) {
+  .person-detail-content{position: initial;}
+}
+
+.accordion{
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+}
+
+.accordion .card{border: 0;}
+.accordion .card .card-header{margin: 0; background: white; font-weight: bold; border-bottom: 1px solid #868484;}
+.accordion .card .card-header.active{border: 0;}
+.accordion .card .card-body{ border-bottom: 1px solid #868484;}
+
+footer {background: #363635; padding: 50px 0;}
+footer .footer-links h1{font-size: 16px; font-weight: bold; color: #fff; position: relative; margin-bottom: 20px;}
+footer .footer-links h1::after{content: ""; position: absolute; background: yellow; width: 55px; height: 3px; left: 0; bottom: -10px;}
+footer .footer-links.text-right h1::after{right: 0; left: initial;}
+footer .footer-links ul{margin: 0; padding: 0; list-style: none;}
+footer .footer-links ul li a{color: white;}
+footer .footer-links .social-icons{color: white; margin: 0 0 0 10px;}
+footer .copyright{color: white; margin-top: 100px; display: block; width: fit-content;}
+
+@media(max-width: 767.98px) {
+  footer .footer-links{margin-bottom: 30px;}
+  footer .footer-links.text-right{text-align: left !important;}
+  footer .footer-links.text-right h1::after{left: 0; right: initial;}
+  footer .copyright{margin-top: 50px;}
+}
