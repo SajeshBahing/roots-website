@@ -18,47 +18,47 @@ export default function Story() {
       <section className="padding50 stories">
         <div className="container">
           <div className="row">
-            <div className="col-sm-3">
-                <img src="https://via.placeholder.com/250x250" className="img-fluid" />
+            <div className="col-md-4 col-xl-3">
+              <img src="https://via.placeholder.com/250x250" className="img-fluid" />
               <Link href="/person?id=1">
                 <a className="story-teller">Jane's story</a>
               </Link>
             </div>
-            <div className="col-sm-4 offset-sm-1">
+            <div className="col-md-4 offset-xl-1">
                 <img src="https://via.placeholder.com/250x250" className="img-fluid" />
               <a href="#" className="story-teller">John's story</a>
             </div>
-            <div className="col-sm-3 offset-sm-1">
+            <div className="col-md-4 offset-xl-1 col-xl-3">
               <img src="https://via.placeholder.com/250x250" className="img-fluid" />
               <a href="#" className="story-teller">Edward's story</a>
             </div>
           </div>
 
           <div className="row">
-            <div className="col-sm-3">
-                <img src="https://via.placeholder.com/250x250" className="img-fluid" />
+            <div className="col-md-4 col-xl-3">
+              <img src="https://via.placeholder.com/250x250" className="img-fluid" />
               <a href='#' className="story-teller">Jane's story</a>
             </div>
-            <div className="col-sm-4 offset-sm-1">
+            <div className="col-md-4 offset-xl-1">
                 <img src="https://via.placeholder.com/250x250" className="img-fluid" />
               <a href="#" className="story-teller">John's story</a>
             </div>
-            <div className="col-sm-3 offset-sm-1">
+            <div className="col-md-4 offset-xl-1 col-xl-3">
               <img src="https://via.placeholder.com/250x250" className="img-fluid" />
               <a href="#" className="story-teller">Edward's story</a>
             </div>
           </div>
 
           <div className="row">
-            <div className="col-sm-3">
-                <img src="https://via.placeholder.com/250x250" className="img-fluid" />
+            <div className="col-md-4 col-xl-3">
+              <img src="https://via.placeholder.com/250x250" className="img-fluid" />
               <a href='#' className="story-teller">Jane's story</a>
             </div>
-            <div className="col-sm-4 offset-sm-1">
+            <div className="col-md-4 offset-xl-1">
                 <img src="https://via.placeholder.com/250x250" className="img-fluid" />
               <a href="#" className="story-teller">John's story</a>
             </div>
-            <div className="col-sm-3 offset-sm-1">
+            <div className="col-md-4 offset-xl-1 col-xl-3">
               <img src="https://via.placeholder.com/250x250" className="img-fluid" />
               <a href="#" className="story-teller">Edward's story</a>
             </div>

@@ -25,12 +25,11 @@ export default function Header (props) {
               </Nav>
 
               <Nav>
-                <Nav.Item>
                   <Nav.Link href="#" className="create-opportunities">Create opportunities</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
+                
+                
                   <Nav.Link href="#" className="login-button">Login</Nav.Link>
-                </Nav.Item>
+                
               </Nav>
             </Navbar.Collapse>
           </div>

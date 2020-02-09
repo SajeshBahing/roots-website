@@ -3,6 +3,39 @@ import Footer from "../components/footer";
 import TextField from '@material-ui/core/TextField';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import { withStyles } from '@material-ui/core/styles';
+
+const CustomTextField = withStyles({
+  root: {
+    '& label.Mui-focused': {
+      color: '#007D98',
+    },
+    '& .MuiInput-underline:after': {
+      borderBottom: '2px solid #007D98',
+    },
+    '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
+      borderColor: "#007D98"
+    },
+    '& .MuiInput-input': {
+      color: '#007D98 !important'
+    },
+    '& .MuiFilledInput-multiline': {
+      background: 'white',
+      border: "1px solid rgba(0,0,0,0.37)",
+      borderBottom: '0'
+    },
+    '& .MuiFilledInput-input' : {
+      background: 'white',
+      color: '#007D98'
+    },
+    '& .MuiFilledInput-underline:after':{
+      borderColor: '#007D98'
+    },
+    '& .MuiFilledInput-underline:hover:before' : {
+      borderColor: '#007D98'
+    }
+  },
+})(TextField);
 
 export default function Contact() {
   const [companyName, setCompanyName] = useState('');
@@ -40,7 +73,7 @@ export default function Contact() {
             <div className="col-md-6 offset-md-3">
               <form onSubmit={HandleSubmit} >
                 <div className="form-group">
-                  <TextField
+                  <CustomTextField
                     onChange={(e) => setCompanyName(e.target.value)}
                     id="companyName"
                     className="w-100"
@@ -50,7 +83,7 @@ export default function Contact() {
                 </div>
 
                 <div className="form-group">
-                  <TextField
+                  <CustomTextField
                     onChange={(e) => setName(e.target.value)}
                     id="name"
                     className="w-100"
@@ -60,7 +93,7 @@ export default function Contact() {
                 </div>
 
                 <div className="form-group">
-                  <TextField
+                  <CustomTextField
                     onChange={(e) => setEmail(e.target.value)}
                     name="email"
                     className="w-100"
@@ -71,7 +104,7 @@ export default function Contact() {
                 </div>
 
                 <div className="form-group">
-                  <TextField
+                  <CustomTextField
                     onChange={(e) => setMessage(e.target.value)}
                     id="message"
                     className="w-100"

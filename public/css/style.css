@@ -1,27 +1,29 @@
 html, body {margin: 0; padding: 0;}
 html, body, div, header, footer, td, li, p, span, link, label, h1, h2, h3, h4, h5 {font-family: Helvetica, sans-serif;}
 .container-fluid{padding-right: 100px; padding-left: 100px;}
-.roots-header {position: fixed; top: 0; right: 0; left: 0; height: 83px; z-index: 1;}
+.roots-header {position: fixed; top: 0; right: 0; left: 0; height: 67px; z-index: 1;}
 .roots-header .bg-dark{background: black !important; padding: 0;}
 .roots-header .bg-dark .navbar-brand img {width: 50px;}
-.roots-header .create-opportunities{color: yellow !important; border: 1px solid yellow; border-radius: 15px; padding: 3px 40px !important;}
+.roots-header .create-opportunities{color: yellow !important; border: 1px solid yellow; border-radius: 15px; padding: 3px 40px !important; margin-top: 5px;}
 .roots-header .login-button{color: white; margin-left: 20px;}
 .roots-header .navbar-dark .navbar-nav .nav-link{color: white;}
 .roots-header .navbar-dark .navbar-nav .nav-link.active{color: yellow;}
 @media (max-width: 991.98px) {
   .roots-header .login-button{margin-left: 0;}
-  .roots-header .create-opportunities {border: 0; color: white !important; padding: 0 !important;}
+  .roots-header .create-opportunities {border: 0; color: white !important; padding: 5px 0 !important;}
   .roots-header .nav-item{padding: 0 10px;}
+
+  .container-fluid{padding-right: 15px !important; padding-left: 15px !important;}
 }
 
 .main-header, .main-body, #__next{height: 100%;}
 
 @media(max-width: 767.98px) {
-  .container-fluid{padding-right: 15px; padding-left: 15px;}
+  .container-fluid{padding-right: 15px !important; padding-left: 15px !important;}
 }
 
 html, body {height: 100%;}
-.banner {height: 100%; box-sizing: border-box; padding-top: 83px; background: black url("../images/Hands.svg") no-repeat center 17px;
+.banner {height: 100%; box-sizing: border-box; padding-top: 67px; background: black url("../images/Hands.svg") no-repeat center 17px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -64,6 +66,7 @@ html, body {height: 100%;}
 .stories .story-teller{display: block; width: fit-content; margin: 0 auto; padding: 20px 0; text-align: center; color: #000; font-weight: bold;}
 .stories .more-stories{display: block; width: fit-content; margin: 0 0 50px auto; color: #363635;}
 .stories img{margin: 0 auto; display: block;}
+
 
 .person-back-button{color: black; margin-bottom: 20px; display: block; width: fit-content;}
 .person-detail-contaier{position: relative;}
