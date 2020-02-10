@@ -1,6 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import React from 'react';
+import Link from 'next/link';
 
 export default function Header (props) {
 
@@ -20,8 +21,12 @@ export default function Header (props) {
             <Navbar.Collapse id="navbarSupportedContent">
               <Nav className="mr-auto">
                 <Nav.Link href="/">Your create</Nav.Link>
-                <Nav.Link href="/about" className={currentPage === 'about' ? 'active': ''} >About us</Nav.Link>
-                <Nav.Link href="/help" className={currentPage === 'help' ? 'active': ''} >Help</Nav.Link>
+                <Link href="/about">
+                  <a className={currentPage === 'about' ? 'active nav-link': 'nav-link'} >About us</a>
+                </Link>
+                <Link href="/help">
+                  <a className={currentPage === 'help' ? 'active nav-link': 'nav-link'} >Help</a>
+                </Link>
               </Nav>
 
               <Nav>
